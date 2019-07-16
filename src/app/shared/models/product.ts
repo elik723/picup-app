@@ -35,83 +35,83 @@ export class Product {
         return this.id;
     }
 
-    public set product_id (value: number) {
+    public set_product_id (value: number) {
         this.id = value;
     }
 
-    public get product_name(): string {
+    public get_product_name(): string {
         return this.name;
     }
 
-    public set product_name (value: string) {
+    public set_product_name (value: string) {
         this.name = value;
     }
 
-    public get product_description(): string {
+    public get_product_description(): string {
         return this.description;
     }
 
-    public set product_description (value: string) {
+    public set_product_description (value: string) {
         this.description = value;
     }
 
-    public get product_price(): number {
+    public get_product_price(): number {
         return this.price;
     }
 
-    public set product_price (value: number) {
+    public set_product_price (value: number) {
         this.price = value;
     }
 
-    public get product_size(): string {
+    public get_product_size(): string {
         return this.size;
     }
 
-    public set product_size (value: string) {
+    public set_product_size (value: string) {
         this.size = value;
     }
 
-    public get product_weight(): number {
+    public get_product_weight(): number {
         return this.weight;
     }
 
-    public set product_weight (value: number) {
+    public set_product_weight (value: number) {
         this.weight = value;
     }
 
-    public get product_reorder_price(): number {
+    public get_product_reorder_price(): number {
         return this.reorder_price;
     }
 
-    public set product_reorder_price (value: number) {
+    public set_product_reorder_price (value: number) {
         this.reorder_price = value;
     }
 
-    public get product_image(): string {
+    public get_product_image(): string {
         return this.image;
     }
 
-    public set product_image (value: string) {
+    public set_product_image (value: string) {
         this.image = value;
     }
 
-    public get product_merchant_id(): number {
+    public get_product_merchant_id(): number {
         return this.merchant_id;
     }
 
-    public set product_merchant_id (value: number) {
+    public set_product_merchant_id (value: number) {
         this.merchant_id = value;
     }
 
-    public get product_stock_count(): number {
+    public get_product_stock_count(): number {
         return this.stock_count;
     }
 
-    public get product_total_sold(): number {
+    public get_product_total_sold(): number {
         return this.total_sold;
     }
 
-    public set product_total_sold (value: number) {
+    public set_product_total_sold (value: number) {
         this.total_sold = value;
     }
     
