@@ -31,17 +31,71 @@ export class User {
         this.pending_orders = pending_orders;
     }
 
-    create_cart() {
-        if (this.cart == null) {
-            this.cart = new Cart();
-        }
+    //setter methods
+
+    public set_name(name: string) {
+        this.name = name;
     }
 
-    print() {
-        console.log(this.id);
-        console.log(this.address);
-        console.log(this.new_user);
-        console.log(this.pending_orders);
+    public set_email(email: string) {
+        this.email = email;
+    }
+
+    public set_password(password: string) {
+        this.password = password;
+    }
+
+    public set_cell_phone_number(cell_phone_number: string) {
+        this.cell_phone_number = cell_phone_number;
+    }
+
+    public set_address(address: string) {
+        this.address = address;
+    }
+
+    public set_instructions(instructions: string) {
+        this.instructions = instructions;
+    }
+
+    //getter methods
+
+    public get_id(): number {
+        return this.id;
+    }
+
+    public get_name(): string {
+        return this.name;
+    }
+
+    public get_email(): string {
+        return this.email;
+    }
+    public get_password(): string {
+        return this.password;
+    }
+
+    public get_cell_phone_number(): string {
+        return this.cell_phone_number;
+    }
+    
+    public get_address(): string {
+        return this.address;
+    }
+
+    public get_instructions(): string {
+        return this.instructions;
+    }
+
+    public is_new_user(): boolean {
+        return this.new_user;
+    }
+
+    public get_past_orders(): number[] {
+        return this.past_orders;
+    }
+
+    public get_pending_orders(): number[] {
+        return this.pending_orders;
     }
 
 }
