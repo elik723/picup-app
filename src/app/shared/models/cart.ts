@@ -17,14 +17,15 @@ export class Cart {
         return this.item_id;
     }
 
-    public set_item_id(): (value: number) {
+    public set_item_id (value: number) {
         this.item_id = value;
+    }
 
     public get_item_name(): string {
         return this.item_name;
     }
 
-    public set_item_name(): (value: string) {
+    public set_item_name (value: string) {
         this.item_name = value;
     }
 
@@ -32,7 +33,7 @@ export class Cart {
         return this.quantity;
     }
 
-    public set_quantity(): (value: number) {
+    public set_quantity (value: number) {
         this.quantity = value;
     }
 
@@ -40,7 +41,7 @@ export class Cart {
         return this.total_price;
     }
     
-    public set_total_price(): (value: number) {
+    public set_total_price (value: number) {
         this.total_price = value;
     }
 }
