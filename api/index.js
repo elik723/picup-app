@@ -2,11 +2,6 @@ const express = require ('express');
 const app = express();
 const cors = require('cors');
 
-app.use ((req, res, next) => {
-    console.log("This middleware function was executed");
-    console.log(req.body);
-    next();
-});
 
 // Allows access from device
 app.use(cors());
@@ -14,6 +9,12 @@ app.use(cors());
 // Body parser middleware
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
+
+app.use ((req, res, next) => {
+    console.log("This middleware function was executed");
+    console.log(req.body);
+    next();
+});
 
 // route middleware
 app.use("/api/user", require("./src/api/user-routes"));
