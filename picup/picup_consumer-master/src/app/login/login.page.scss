@@ -1,0 +1,33 @@
+app-login {
+    
+}
+
+$white-color: #fff;
+$height100: 100%;
+
+ion-content {
+    --background: none;
+    background-image: url('../../assets/images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ion-grid {
+    width:100%;
+    height: $height100;
+    // background-image: url("url(../assets/images/background.jpg)");
+}
+
+ion-row {
+    height: $height100;
+}
+
+ion-col {
+    background:none;
+}
+
+ion-button {
+    font-weight: 300;
+}
+
